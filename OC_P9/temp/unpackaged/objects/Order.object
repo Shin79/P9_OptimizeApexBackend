@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayouts>
+        <fullName>new_order</fullName>
+        <fields>OrderNumber</fields>
+        <fields>AccountId</fields>
+        <fields>ContractId</fields>
+        <fields>EffectiveDate</fields>
+        <fields>Status</fields>
+        <fields>TotalAmount</fields>
+        <fields>Frais_de_livraison__c</fields>
+        <fields>Montant_Net__c</fields>
+        <label>new order</label>
+    </compactLayouts>
+    <fields>
+        <fullName>Frais_de_livraison__c</fullName>
+        <externalId>false</externalId>
+        <label>Frais de livraison</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Montant_Net__c</fullName>
+        <externalId>false</externalId>
+        <formula>TotalAmount  -  Frais_de_livraison__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Montant Net</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+</CustomObject>

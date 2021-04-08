@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fasha_app</fullName>
+    <types>
+        <members>Order.new_order</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Capture_dcran_20210407_164535</members>
+        <name>ContentAsset</name>
+    </types>
+    <types>
+        <members>Fasha_Org</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Account.Chiffre_d_affaire__c</members>
+        <members>Order.Frais_de_livraison__c</members>
+        <members>Order.Montant_Net__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Fasha_Org_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <version>50.0</version>
+</Package>
